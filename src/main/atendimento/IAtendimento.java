@@ -2,13 +2,14 @@ package main.atendimento;
 
 import main.atendimento.estado.AtendimentoEstado;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Observable;
 
     public abstract class IAtendimento extends Observable {
     protected AtendimentoEstado estado;
 
-    List<ServicoVeterinario> servicos;
+    List<ServicoVeterinario> servicos = new ArrayList<>();
 
     public float getPreco(){
         float precoFinal = 0.0f;

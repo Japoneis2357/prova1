@@ -4,7 +4,7 @@ import main.atendimento.IAtendimento;
 
 public class AnimalAdotado implements Taxas {
     public AnimalAdotado(IAtendimento atendimento){
-        super(atendimento);
+        super();
     }
     @Override
     public float getPreco() {
