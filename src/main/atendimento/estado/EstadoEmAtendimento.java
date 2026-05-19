@@ -10,6 +10,10 @@ public class EstadoEmAtendimento extends AtendimentoEstado{
         return instance;
     }
 
+    public String getEstado(){
+        return "Em Atendimento";
+    }
+
     public boolean finalizar(IAtendimento atendimento){
         atendimento.setEstado(EstadoFinalizado.getInstance());
         return true;

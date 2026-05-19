@@ -7,4 +7,8 @@ public class EstadoFinalizado extends AtendimentoEstado{
     public static EstadoFinalizado getInstance() {
         return instance;
     }
+
+    public String getEstado(){
+        return "Finalizado";
+    }
 }

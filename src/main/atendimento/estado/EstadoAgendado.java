@@ -10,6 +10,10 @@ public class EstadoAgendado extends AtendimentoEstado{
         return instance;
     }
 
+    public String getEstado(){
+        return "Agendado";
+    }
+
     public boolean cancelar(IAtendimento atendimento){
         atendimento.setEstado(EstadoCancelado.getInstance());
         return true;

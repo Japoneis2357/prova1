@@ -8,5 +8,8 @@ public class EstadoCancelado extends AtendimentoEstado{
         return instance;
     }
 
+    public String getEstado(){
+        return "Cancelado";
+    }
 
 }
