@@ -15,6 +15,7 @@ import java.util.Observable;
         for (ServicoVeterinario servico : servicos) {
             precoFinal += servico.getPreco();
         }
+        return precoFinal;
     }
 
     public void addServico(ServicoVeterinario servico){
